@@ -6,12 +6,20 @@ const socketIO = require("socket.io");
 
 const app=express();
 const port=4500 || process.env.PORT;
+
+
+app.use(cors());
+app.get("/",(req,res)=>{
+    res.send("DEllo");
+})
 const server=http.createServer(app);
 
 const io =socketIO(server);
 
-
+io.on("connection",()=>{
+    console.log("new connections");
+})
 
 server.listen(port,()=>{
-    console.log(`server is working on ${port}`);
+    console.log(`server is working on http://localhost:${port}`);
 })
