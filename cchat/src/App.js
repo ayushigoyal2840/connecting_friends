@@ -7,7 +7,8 @@ import {
 
   // Switch
 } from "react-router-dom";
-import Connect from './component/Join/Connect';
+// import Connect from './component/Join/Connect';
+import Join from './component/Join/Join'
 // import { browserHistory } from 'react-router'
 
 
@@ -20,7 +21,9 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Routes>
-      <Route path='/' element={ <Connect />} />
+      <Route exact path='/' element={ <Join />} />
+      <Route exact path='/cc' />
+
      </Routes>
       </BrowserRouter>
      
