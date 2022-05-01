@@ -22,3 +22,20 @@ const Message = ({ user, message, classs }) => {
 }
 
 export default Message
+
+
+// import React from 'react'
+
+// import './Message.css'
+
+// const Message = ({user,message,classs}) => {
+//   return (
+//     <div className='messageBox left'>
+//         {message}
+//         {/* {message} */}
+//         </div>
+    
+//   )
+// }
+
+// export default Message

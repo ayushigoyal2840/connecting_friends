@@ -9,8 +9,9 @@
 
 .chatContainer{
     background-color: white;
-    height: 60%;
+    height: 80%;
     width: 50%;
+    
 }
 
 .header{
@@ -19,6 +20,7 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
+   /* border-radius: 2vmax; */
 }
 
 .header>h2{
@@ -40,8 +42,9 @@
 
 .chatBox{
 border: 0.2vmax solid black;
- height: 70%;
+ height: 80%;
  box-sizing: border-box;
+ /* overflow-y: auto; */
  
 }
 
