@@ -9,7 +9,7 @@ import closeIcon from '../../images/closeIcon.png'
 
 let socket;
 
-const ENDPOINT="http://localhost:4500/"
+const ENDPOINT="https://chatting-app22.herokuapp.com/"
 const Chat = () => {
 
   const [id, setid] = useState("");
@@ -66,12 +66,14 @@ const Chat = () => {
         <div className='chatContainer'>
             <div className='header'>
               <h1>Make Friends</h1>
+              <a href='/'><img src={closeIcon} alt="close" /></a>
+              
                </div>
             <ReactScrollToBottom className='chatBox'>
               {messages.map((item,i)=> <Message user={item.id===id?' ':item.user}  message={item.message} classs={item.id===id?'right':'left'}/>)}
             </ReactScrollToBottom>
             <div className='inputBox'>
-            <input  type="text" id="chatInput" />
+            <input onKeyPress={(event)=>event.key === 'Enter' ? send() : null }  type="text" id="chatInput" />
             <button onClick={send} className="sendBtn"><img src={sendLogo} alt="Send" /></button>
 
             </div>

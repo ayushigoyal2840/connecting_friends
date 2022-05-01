@@ -1,5 +1,5 @@
 .chatPage{
-    background-color: rgb(31, 29, 29);
+    background-color: rgb(37, 40, 40);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -23,7 +23,7 @@
    /* border-radius: 2vmax; */
 }
 
-.header>h2{
+.header>h1{
     font-size: 1.5vmax;
     color: white;
     margin: 2.5vmax;
@@ -34,6 +34,8 @@
     margin: 2.5vmax;
     transition: all 0.3s;
     cursor: pointer;
+    height: 20px;
+    color: red;
 }
 .header>img:hover{
     transform: scale(1.2);
@@ -41,7 +43,7 @@
 
 
 .chatBox{
-border: 0.2vmax solid black;
+/* border: 0.2vmax solid black; */
  height: 80%;
  box-sizing: border-box;
  /* overflow-y: auto; */
@@ -49,7 +51,7 @@ border: 0.2vmax solid black;
 }
 
 .inputBox{
-    border: 0.2vmax solid black;
+    /* border: 0.2vmax solid black; */
     height: 70px;
     box-sizing: border-box;
     display: flex;
@@ -65,7 +67,7 @@ border: 0.2vmax solid black;
     outline: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.2vmax;
-    border-top: 0.2vmax solid rgba(41, 41, 41, 0.562);
+    border-top: 0.1vmax solid rgba(0, 0, 0, 0.562);
 }
 
 
